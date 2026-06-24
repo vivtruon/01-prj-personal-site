@@ -2,10 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivian's Portfolio</title>
+
+  <!-- Google Fonts: a handwritten-style font for headings, a clean font for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+
+  <!-- ============ NAVIGATION BAR ============ -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#home" class="active">home</a></li>
+      <li><a href="#about">about me</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact me</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HOME / INTRO SECTION ============ -->
+  <main>
+    <section id="home" class="intro-section">
+
+      <!-- Profile picture -->
+      <div class="profile-pic-wrapper">
+        <img src="img/pfp.png" alt="Vivian's profile picture" class="profile-pic">
+      </div>
+
+      <!-- Intro text, bio note, and skills -->
+      <div class="intro-text">
+
+        <h1 class="big-greeting">Hi! I'm Vivian!</h1>
+
+        <!-- ===== BIO SECTION ===== -->
+        <div id="about" class="bio-section">
+          <h2 class="section-label">bio:</h2>
+
+          <div class="sticky-note">
+            <p>
+              I'm a student who is passionate about tech and art.
+              I hope to pursue design in the future!
+            </p>
+          </div>
+        </div>
+
+        <!-- ===== SKILLS SECTION ===== -->
+        <div class="skills-section">
+          <h2 class="section-label">skills:</h2>
+
+          <div class="skills-grid">
+            <!-- Each box can hold a logo/icon image later, e.g. <img src="html-icon.png" alt="HTML">  -->
+            <div class="skill-box">
+              <img src="img/ISO_C++_Logo.svg" alt="C++">
+            </div>
+            <div class="skill-box"></div>
+            <div class="skill-box"></div>
+            <div class="skill-box"></div>
+            <div class="skill-box"></div>
+            <div class="skill-box"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-label">projects:</h2>
+
+      <div class="projects-grid">
+        <!-- Repeat this card for each project you add later -->
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>A short description of this project goes here.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>A short description of this project goes here.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>A short description of this project goes here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-label">Contact Me:</h2>
+
+      <div class="sticky-note contact-note">
+        <p>Email: vivian@example.com</p>
+        <p>GitHub: github.com/vivian</p>
+        <p>LinkedIn: linkedin.com/in/vivian</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Vivian. Made with HTML &amp; CSS.</p>
+  </footer>
+
 </body>
 </html>
