@@ -13,7 +13,7 @@
   --color-accent: #c65b5b;       /* reddish accent (headings, underline) */
   --color-heading: #326195;      /* blue handwritten heading */
   --color-text: #333333;         /* main body text */
-  --color-note: #ffffff;         /* sticky note background */
+  --color-note: #f8f8f4;         /* sticky note background */
   --color-profile-bg: #2f6690;   /* circle behind profile pic */
   --color-skill-box: #fbe8d4;    /* fill inside skill boxes */
 }
@@ -26,7 +26,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   background-color: var(--color-background);
   color: var(--color-text);
   line-height: 1.6;
@@ -42,7 +42,7 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2.5rem;
+  gap: 3rem;
   flex-wrap: wrap;
   max-width: 1100px;
   margin: 0 auto;
@@ -77,13 +77,16 @@ main {
   color: var(--color-accent);
   font-size: 1.6rem;
   margin-bottom: 1rem;
+  max-width: 1025px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ---------- INTRO / HOME SECTION ---------- */
 .intro-section {
   display: flex;
   align-items: flex-start;
-  gap: 4rem;
+  gap: 10rem;
   flex-wrap: wrap;
   padding: 3rem 0;
 }
@@ -99,6 +102,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5rem;
+  margin-right: center;
 }
 
 .profile-pic {
@@ -139,8 +144,15 @@ main {
 /* ---------- SKILLS SECTION ---------- */
 .skills-grid {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .skill-box {
@@ -152,30 +164,43 @@ main {
   justify-content: center;
 }
 
+.skill-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-text);
+  max-width: 80px;
+  margin: 0;
+}
+
 /* If you add an icon image inside a skill box, this keeps it sized nicely */
 .skill-box img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 5px;
+  padding: 0px;
+  filter: brightness(0)invert(1);
 }
 
 /* ---------- PROJECTS SECTION ---------- */
 .projects-section {
-  padding: 3rem 0;
+  background-color: #d9dde2;
+  margin: 0 calc(-50vw + 50%);
+  padding: 3rem 2rem;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .project-card {
   background-color: var(--color-note);
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.12);
   transition: transform 0.2s ease;
 }
 
@@ -193,12 +218,31 @@ main {
   padding: 3rem 0;
 }
 
-.contact-note {
+.contact-icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   max-width: 400px;
 }
 
-.contact-note p {
-  margin-bottom: 0.5rem;
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 /* ---------- FOOTER ---------- */

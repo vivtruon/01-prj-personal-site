@@ -8,7 +8,7 @@
   <!-- Google Fonts: a handwritten-style font for headings, a clean font for body text -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Inter:wght@400;500;600&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -36,16 +36,15 @@
       <!-- Intro text, bio note, and skills -->
       <div class="intro-text">
 
-        <h1 class="big-greeting">Hi! I'm Vivian!</h1>
+        <h1 class="big-greeting">Hi, I'm Vivian!</h1>
 
         <!-- ===== BIO SECTION ===== -->
         <div id="about" class="bio-section">
-          <h2 class="section-label">bio:</h2>
+          <h2 class="section-label">about me:</h2>
 
           <div class="sticky-note">
             <p>
-              I'm a student who is passionate about tech and art.
-              I hope to pursue design in the future!
+              Welcome to my portfolio! I'm a Computer Science and Psychology student at UC Davis who is passionate about art, coding, and problem-solving. Feel free to explore my projects and reach out if you'd like to collaborate or connect!
             </p>
           </div>
         </div>
@@ -56,14 +55,24 @@
 
           <div class="skills-grid">
             <!-- Each box can hold a logo/icon image later, e.g. <img src="html-icon.png" alt="HTML">  -->
-            <div class="skill-box">
-              <img src="img/ISO_C++_Logo.svg" alt="C++">
+            <div class="skill-item">
+              <div class="skill-box">
+                <img src="img/cpp_icon.png" alt="C++">
+              </div>
+              <p class="skill-label">C++</p>
             </div>
-            <div class="skill-box"></div>
-            <div class="skill-box"></div>
-            <div class="skill-box"></div>
-            <div class="skill-box"></div>
-            <div class="skill-box"></div>
+            <div class="skill-item">
+              <div class="skill-box">
+                <img src="img/html_icon.png" alt="HTML">
+              </div>
+              <p class="skill-label">HTML</p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-box">
+                <img src="img/css_icon.png" alt="CSS">
+              </div>
+              <p class="skill-label">CSS</p>
+            </div>
           </div>
         </div>
 
@@ -77,34 +86,40 @@
       <div class="projects-grid">
         <!-- Repeat this card for each project you add later -->
         <div class="project-card">
-          <h3>Project Title</h3>
-          <p>A short description of this project goes here.</p>
+          <h3>Connect N Game</h3>
+          <p>A twist on the classic Connect Four game.</p>
         </div>
         <div class="project-card">
-          <h3>Project Title</h3>
-          <p>A short description of this project goes here.</p>
+          <h3>Simple Unix CLI</h3>
+          <p>A simple command line interface for basic file operations.</p>
         </div>
         <div class="project-card">
-          <h3>Project Title</h3>
-          <p>A short description of this project goes here.</p>
+          <h3>CLI Paint</h3>
+          <p>Paint using the command line.</p>
         </div>
       </div>
     </section>
 
     <!-- ============ CONTACT SECTION ============ -->
     <section id="contact" class="contact-section">
-      <h2 class="section-label">Contact Me:</h2>
+      <h2 class="section-label">contact me:</h2>
 
-      <div class="sticky-note contact-note">
-        <p>Email: vivian@example.com</p>
-        <p>GitHub: github.com/vivian</p>
-        <p>LinkedIn: linkedin.com/in/vivian</p>
+      <div class="contact-icons">
+        <a href="mailto:vivtru@ucdavis.edu" class="contact-link" title="Email">
+          <img src="img/email-icon.png" alt="Email" class="contact-icon">
+        </a>
+        <a href="https://github.com/vivtruon" target="_blank" rel="noreferrer" class="contact-link" title="GitHub">
+          <img src="img/github-icon.svg" alt="GitHub" class="contact-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/vivian-truong-1a47033b1/" target="_blank" rel="noreferrer" class="contact-link" title="LinkedIn">
+          <img src="img/linkedin-icon.png" alt="LinkedIn" class="contact-icon">
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Vivian. Made with HTML &amp; CSS.</p>
+    <p>&copy; 2026 Vivian Truong. Made with HTML &amp; CSS.</p>
   </footer>
 
 </body>
